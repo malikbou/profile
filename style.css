@@ -1,0 +1,209 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Montserrat:wght@700&display=swap');
+@media (max-width: 960px) {
+  /* For a screen < 960px, this CSS will be read */
+  .container {
+    width: 700px;
+  }
+  .grid-container-element {
+    width: 700px;
+  }
+}
+
+@media (max-width: 720px) {
+  /* For a screen < 720px, this CSS will be read */
+  .container {
+    width: 500px;
+  }
+  .grid-container-element {
+    width: 500px;
+  }
+}
+
+@media (max-width: 540px) {
+  /* For a screen < 540px, this CSS will be read */
+  .container {
+    width: 300px;
+  }
+  .grid-container-element {
+    width: 300px;
+  }
+}
+
+h1, h2, h3 {
+  color: #3F0071;
+  font-family: 'Montserrat', sans-serif;
+  line-height: 20px;
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: bold;
+}
+
+h1 {
+  font-size: 30px;
+}
+
+h2 {
+  font-size: 18px;
+}
+
+p {
+  color: #150050;
+  font-family: 'Lato', sans-serif;
+  text-decoration: none;
+  text-align: justify;
+}
+
+#profile_picture {
+  height: auto;
+  border-radius: 8px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 10%;
+  max-width: 10%;
+}
+
+a {
+  font-family: 'Lato', sans-serif;
+  text-decoration: none;
+  text-align:center;
+  width:150px;
+  float:left;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+div {
+  background: white;                          /* White background */
+  padding: 20px;                                /* Internal space */
+  border-radius: 10px;                          /* Small radius */
+  box-shadow: 0 10px 30px rgba(0,0,0,.1);     /* Light shadow */
+  width: 450px;                                 /* Set the width */
+  margin: 0 auto;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.grid-container-element {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 5px;
+  margin: auto;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.grid-child-element {
+  border: 1px solid #3F0071;
+  width: 175px;
+}
+
+body {
+  background: -moz-linear-gradient(45deg, #02e1ba 0%, #26c9f2 29%, #d911f2 66%, #ffa079 100%);
+  background: -webkit-linear-gradient(45deg, #02e1ba 0%,#26c9f2 29%,#d911f2 66%,#ffa079 100%);
+  background: linear-gradient(45deg, #02e1ba 0%,#26c9f2 29%,#d911f2 66%,#ffa079 100%);
+  background-size: 100% 100%;
+  -webkit-animation: Gradient 15s ease infinite;
+  -moz-animation: Gradient 15s ease infinite;
+  animation: Gradient 15s ease infinite;
+  min-height: calc(100vh - 2rem);
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  justify-content: space-evenly;
+  overflow: hidden;
+  position: relative;
+}
+
+body::before,
+body::after {
+  content: "";
+  width: 70vmax;
+  height: 70vmax;
+  position: absolute;
+  background: rgba(255, 255, 255, 0.07);
+  left: -20vmin;
+  top: -20vmin;
+  animation: morph 15s linear infinite alternate, spin 20s linear infinite;
+  z-index: 1;
+  will-change: border-radius, transform;
+  transform-origin: 55% 55%;
+  pointer-events: none;
+}
+
+body::after {
+  width: 70vmin;
+  height: 70vmin;
+  left: auto;
+  right: -10vmin;
+  top: auto;
+  bottom: 0;
+  animation: morph 10s linear infinite alternate, spin 26s linear infinite reverse;
+  transform-origin: 20% 20%;
+}
+
+@-webkit-keyframes Gradient {
+0% {
+  background-position: 0 50%
+}
+50% {
+  background-position: 100% 50%
+}
+100% {
+  background-position: 0 50%
+}
+}
+
+@-moz-keyframes Gradient {
+0% {
+  background-position: 0 50%
+}
+50% {
+  background-position: 100% 50%
+}
+100% {
+  background-position: 0 50%
+}
+}
+
+@keyframes Gradient {
+0% {
+  background-position: 0 50%
+}
+50% {
+  background-position: 100% 50%
+}
+100% {
+  background-position: 0 50%
+}
+}
+
+@keyframes morph {
+0% {
+  border-radius: 40% 60% 60% 40% / 70% 30% 70% 30%; }
+100% {
+  border-radius: 40% 60%; }
+}
+
+@keyframes spin {
+to {
+  transform: rotate(1turn);
+}
+}
+.st0{display:none;}
+.st1{display:inline;}
+.st2{opacity:0.29;}
+.st3{fill:#FFFFFF;}
+.st4{clip-path:url(#SVGID_2_);fill:#FFFFFF;}
+.st5{clip-path:url(#SVGID_4_);}
+.st6{clip-path:url(#SVGID_6_);}
+.st7{clip-path:url(#SVGID_8_);}
+.st8{clip-path:url(#SVGID_10_);}
+.st9{fill:none;}
+.st10{clip-path:url(#SVGID_12_);}
+.st11{opacity:0.7;}
+.st12{clip-path:url(#SVGID_14_);}
+.st13{opacity:0.2;}
+.st14{clip-path:url(#SVGID_16_);}
+.st15{opacity:0.3;fill:#FFFFFF;enable-background:new    ;}
